@@ -1,3 +1,13 @@
+/*-----Fonts-----*/
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto.ttf);
+}
+@font-face {
+    font-family: DM Sans;
+    src: url(assets/fonts/DMSans.ttf);
+}
+
 /*------Reset css------*/
 *,
 *::before,
@@ -59,6 +69,14 @@ select {
   }
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto;
+    background: #F5EDE7;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -70,3 +88,118 @@ main{
 footer{
     flex-shrink: 0;
 }
+.wrapper{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*---Header---*/
+.header {
+    
+}
+.header__container {
+    display: flex;
+    flex-direction: column;
+}
+.search__block {
+    position: relative;
+    height: 77px;
+    background-color: #0126DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search__line {
+    display: flex;
+    align-items: center;
+}
+.search__block__text {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.header__input {
+    margin-right: 8px;
+}
+.header__input input{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+    cursor: pointer;
+}
+.header__button button{
+    width: 92px;
+    height: 45px;
+    border-radius: 35px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    cursor: pointer;
+}
+.header__close {
+    position: absolute;
+    top: 16px;
+    right: 8px;
+}
+.nav__block {
+    height: 88px;
+    display: flex;
+    padding: 16px 24px 0 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo__link {
+}
+.header__logo {
+    margin-right: 16px;
+}
+.nav {
+    display: flex;
+    align-items: end;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    padding-right: 16px;
+    font-family: DM Sans;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+.login__cart {
+    display: flex;
+    align-items: end;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+}
+.login__cart-text {
+    font-family: DM Sans;
+    font-size: 18px;
+}
+.cart__img{
+    padding-bottom: 7px;
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*---Main---*/
+
+
+/*---Footer---*/
