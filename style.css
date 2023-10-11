@@ -328,12 +328,6 @@ footer{
 
 /*------*/
 
-.section {
-}
-.section__info {
-}
-.section__wrapper {
-}
 .info__container {
     display: flex;
     justify-content: space-between;
@@ -343,28 +337,71 @@ footer{
 .info__block{
     max-width: 680px;
     width: 100%;
-    
-}
-.info__image__block {
-
-}
-.info__image {
 }
 .info-img{
     max-width: 680px;
     width: 100%;
     border-radius: 20px;
 }
-.info__text__block {
-   
-}
 .info__text {
     font-size: 40px;
     line-height: 56px;
 }
-.section__button {
+
+/*------*/
+
+
+.wrap__shop {
 }
-.blue_btn {
+.shop__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.shop__title {
+    text-align: center;
+    font-size: 39px;
+    padding: 47px 0 24px 0;
+}
+.shop__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.shop__card-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 453px;
+    width: 100%;
+}
+.card__item-image {
+    max-width: 453px;
+    width: 100%;
+}
+.shop__image {
+    border-radius: 20px;
+}
+.pastry__name {
+    font-size: 27px;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+.pastry__price {
+    font-family: DM Sans;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+}
+.shop-btn {
+    width: 257px;
+    height: 58px;
+    border-radius: 35px;
+    color: #0126DE;
+    border: 1px solid #0126DE;
+    background: none;
+    cursor: pointer;
+}
+
 
 /*---Footer---*/
