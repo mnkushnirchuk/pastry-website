@@ -402,6 +402,22 @@ footer{
     background: none;
     cursor: pointer;
 }
-
+ /*------*/
+ .section {
+}
+.section__image {
+    background-color: #FFF;
+}
+.section__wrapper {
+}
+.wrap__image {
+}
+.section__container {
+}
+.container__image {
+}
+.image__section-img{
+    
+}
 
 /*---Footer---*/
