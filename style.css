@@ -146,6 +146,7 @@ footer{
     position: absolute;
     top: 16px;
     right: 8px;
+    cursor: pointer;
 }
 .nav__block {
     height: 88px;
@@ -182,6 +183,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin-right: 6px;
+    cursor: pointer;
 }
 .login__cart-text {
     font-family: DM Sans;
@@ -193,6 +195,7 @@ footer{
 .cart {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 
@@ -509,9 +512,11 @@ footer{
 .section__slider {
     background-color: #FFF;
     border-top: 1px solid #000;
+    overflow: hidden;
 }
 .wrap__slider__section {
     padding: 65px 0 64px 0;
+    overflow-x: hidden;
 }
 .container__slider__section {
     display: flex;
@@ -520,12 +525,13 @@ footer{
 .slider__section__title {
     font-size: 43px;
     padding-bottom: 15px;
-    text-align: center;
+    margin: 0 auto;
 }
 .slider__container {
     display: inline-flex;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 84px;
+    animation: slide 12s linear infinite;
 }
 .slider-item {
     max-width: 336px;
@@ -536,7 +542,14 @@ footer{
 .slider-image{
     border-radius: 20px;
 }
-
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
 /*------*/
 .wrap__join {
     padding: 16px;
@@ -706,11 +719,10 @@ footer{
         bottom: 90px;
     }
 }
-@media screen and (max-width:678px) {
-    
-}
-@media screen and (max-width:960px) {
-    
+@media screen and (max-width:1024px) {
+    .section__slider{
+        display: none;
+    }
 }
 @media screen and (max-width:1080px) {
     .footer__row-1{
@@ -759,6 +771,16 @@ footer{
 @media screen and (min-width: 1000px) {
     .crouisant{
         margin-left: 30px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .slider-item{
+        height: auto;
+    }
+    .slider-image{
+        min-width: 264px;
+        width: 100%;
+        min-height: 264px;
     }
 }
 @media screen and (max-width:1000px) {
